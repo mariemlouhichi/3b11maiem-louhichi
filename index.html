@@ -1,18 +1,146 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8" />
-<title>Acceuil_miniprojet</title>
-</head>
-<body> 
-<h1>accueil</h1>
-<h3 style="color:green;">Mariem Louhichi</h3>
-<img src="./img/WhatsApp Image 2023-11-18 à 20.11.15_39a6fd59.jpg" style="height: 450px; width: 250px"><br>
-<ul>
-<li><a href="index.html">Acceuil</a></li>
-<li><a href="ParcoursAcad.html">Parcours Academique</a></li>
-<li><a href="languages.html"><u>languages</u></a></li>
-<li><a href="experiences.html"><u>experiences</u></a></li>
-<li><a href="Contact.html"><u>Contact</u></a></li>
-</ul>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Mini Projet</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+      }
+
+      h1 {
+        margin-bottom: 0.5em;
+      }
+
+      h2 {
+        color: pink;
+        margin: 0;
+      }
+
+      h2 i u {
+        font-style: italic;
+        text-decoration: underline;
+      }
+
+      img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 1em;
+        border-radius: 50%;
+      }
+
+      nav {
+        background-color: #444;
+        padding: 1em;
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 1em;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+      /**/
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Accueil</h1>
+      <h2>Mariem Nour Houda Louhichi</h2>
+      <h2>
+        <i><u>Software Engineer</u></i>
+      </h2>
+      <img
+        src="./img/WhatsApp Image 2023-11-20 à 13.04.55_ed3e8f39.jpg"
+        alt="Profile Image"
+      />
+    </header>
+
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="ParcoursAcad.html">Parcours Academique</a>
+      <a href="languages.html">Languages</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+	<ul>
+	    <li><h4>Actuelement,je suis  en première année à l'école d'ingénieurs,cette étape est très passionnante de mon parcours.</h4></li>
+	
+        <li><h4>J'apprends tellement de choses intéressantes et je suis vraiment enthousiaste à l'idée de développer mes compétences dans ce domaine.</h4></li>
+	
+	    <li><h4>Mon parcours académique est solide et témoigne de mon engagement envers mes études.</h4></li>
+    </ul>
+	<h2> Centres d'Interet </h2> 
+	<ul>
+	    <li><b> Voyager</b> : Europe (France , Italie , Allmangne ) , Asie (Chine , Japon , Thailande ) </li>
+		<br></br>
+		<li><b>sport</b> : Natation , Football , Tennis </li>
+		<br></br>
+        <li><b> Randonnée en montagne </b></li>
+		<br></br>
+        <li><b>Cultures étrangères 	</b></li>	
+		<br></br>
+    </ul>
+	<h2> talents personnelles </h2> 
+	<ul>
+	   <li><i> Créative </i></li>
+	   <li><i> sérieuse </i></li>
+	   <li><i>  innovante </i></li>
+	   <li><i>  bien organisée </i></li>
+	</ul>	
+	
+    <script>
+      function showAlert() {
+        alert("Bienvenue sur ma page !");
+      }
+
+      window.onload = showAlert;
+    </script>
+
+    <script>
+      function displayProfileMessage() {
+        alert(
+          "Bienvenue sur ma page ! Je suis Mariem Nour Houda Louhichi, ingénieure en logiciel."
+        );
+      }
+
+      document.querySelector("img").onmouseover = displayProfileMessage;
+    </script>
+    <script>
+      // Function to change the background color of the header on click
+      function changeHeaderColor() {
+        var header = document.querySelector("header");
+        header.style.backgroundColor = getRandomColor();
+      }
+
+      // Function to generate a random color
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+
+      document.querySelector("h1").onclick = changeHeaderColor;
+    </script>
+  </body>
+</html>
